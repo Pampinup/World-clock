@@ -19,7 +19,7 @@
     <title>World Clock</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="container-background">
       <div>
         <h1>
           World Clock <span class="material-symbols-outlined"> schedule </span>
@@ -33,13 +33,24 @@
       <select name="select-country" id="select-country">
         <option value="">Select a city...</option>
         <option value="Europe/London">London</option>
-        <option value="America/New_York">New York</option>
-        <option value="Australia/Sydney">Sydney</option>
-        <option value="Europe/Madrid">Madrid</option>
         <option value="Europe/Brussels">Brussels</option>
         <option value="Europe/Dublin">Dublin</option>
-        <option value="Israel">Jerusalem</option>
         <option value="Europe/Paris">Paris</option>
+        <option value="America/Toronto">Toronto</option>
+        <option value="America/New_York">Miami</option>
+        <option value="America/New_York">New York</option>
+        <option value="America/New_York">Washington DC</option>
+        <option value="America/Chicago">Texas</option>
+        <option value="Pacific/Honolulu">Honolulu</option>
+        <option value="America/Caracas">Caracas</option>
+        <option value="Australia/Sydney">Sydney</option>
+        <option value="Asia/Kuala_Lumpur">Kuala Lumpur</option>
+        <option value="Asia/Seoul">Seoul</option>
+        <option value="Asia/Tokyo">Tokyo</option>
+        <option value="Asia/Singapore">Singapore</option>
+        <option value="Asia/Ho_Chi_Minh">Hanoi</option>
+
+
       </select>
       <div id="cities">
         <div id="los-angeles" class="display-city">
@@ -65,13 +76,6 @@
         </div>
       </div>
       <div id="display-your-location" class="display-city">
-        <div>
-          <h2>
-            <span class="material-symbols-outlined"> home_pin </span>
-          </h2>
-          <div class="date">September 15th 2025</div>
-        </div>
-        <div class="time">10:35:15<small>AM</small></div>
       </div>
       <footer>
         <small>

@@ -50,17 +50,19 @@ function updateCountry(event) {
         </div>`;
 }
 function getYourLocation() {
-    let localTime = document.querySelector("#cities");
-    let timezone = moment.tz.guess();
-    let cityName = timezone.replace("_", " ").split("/")[1];
-    let here = moment.tz(timezone);
-    localTime.innerHTML = `
+  let localTime = document.querySelector("#cities");
+  let timezone = moment.tz.guess();
+  let cityName = timezone.replace("_", " ").split("/")[1];
+  let here = moment.tz(timezone);
+  localTime.innerHTML = `
   <div class="display-city">
           <div>
-            <h2>${cityName}</h2>
+            <h2>In ${cityName} timezone <span class="material-symbols-outlined"> home_pin </span></h2>
             <div class="date">${here.format("MMMM Do YYYY")}</div>
           </div>
-          <div class="time">${here.format("hh:mm:ss [<small>]A[</small>]")}</div>
+          <div class="time">${here.format(
+            "hh:mm:ss [<small>]A[</small>]"
+          )}</div>
         </div>`;
 }
 updateTime();
