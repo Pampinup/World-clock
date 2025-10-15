@@ -65,11 +65,22 @@ function getYourLocation() {
           )}</div>
         </div>`;
 }
+function updateBackground(event) {
+  let countryTimezone = event.target.value;
+  let containerElement = document.querySelector("#container-background");
+  let nameCountry = countryTimezone
+    .split("/")[1]
+    .replace("_", " ")
+    .toLowerCase();
+  let nameCountryClass = nameCountry.replace(" ", "-");
+  containerElement.classList.add(nameCountryClass);
+}
 updateTime();
 setInterval(updateTime, 1000);
 // Dropdown menu
 let selectCountryElement = document.querySelector("#select-country");
 selectCountryElement.addEventListener("change", updateCountry);
+selectCountryElement.addEventListener("change", updateBackground);
 // Your location
 let yourLocationButton = document.querySelector("#get-your-location");
 yourLocationButton.addEventListener("click", getYourLocation);

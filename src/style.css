@@ -21,7 +21,6 @@
 body {
   background-color: rgba(244, 235, 232, 0.9);
   font-family: "Instrument Serif", serif;
-
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -29,7 +28,7 @@ body {
 .container {
   max-width: 600px;
   margin: 60px auto;
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/883/original/51RXJ9Ga-gL._AC_SL1000_.jpg?1760535459");
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/890/original/51RXJ9Ga-gL._AC_SL1000_.jpg?1760559483");
   background-size: cover;
   background-blend-mode: lighten;
   background-color: rgba(244, 235, 232, 0.9);
@@ -115,4 +114,28 @@ footer {
 }
 .foot-link {
   color: #bc8034;
+}
+.kuala-lumpur {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/889/original/51DZbHffbQL._AC_SL1000_.jpg?1760559306");
+  background-size: cover;
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(244, 235, 232, 0.9);
+}
+.sydney {
+    background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/888/original/51YkfPIs1sL._UF894_1000_QL80_.jpg?1760558895");
+    background-size: cover;
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(244, 235, 232, 0.9);
+}
+.singapore {
+    background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/892/original/51iiqkG6WmL._AC_SL1000_.jpg?1760559984");
+    background-size: cover;
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(244, 235, 232, 0.9);
 }
