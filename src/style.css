@@ -19,20 +19,29 @@
 }
 
 body {
-  background-color: #f7e0d4;
+  background-color:  rgba(244, 235, 232, 0.9);
   font-family: "Instrument Serif", serif;
+  
+  
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .container {
   max-width: 600px;
   margin: 60px auto;
-  background-color: white;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/883/original/51RXJ9Ga-gL._AC_SL1000_.jpg?1760535459");
+  background-size: cover;
+  background-blend-mode: lighten;
+  background-color: rgba(244, 235, 232, 0.9);
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 h1 {
-  color: #333;
+  color: #5e0b15;
   text-align: center;
   margin-top: 20px;
   font-size: 36px;
@@ -45,14 +54,20 @@ select {
   border-radius: 5px;
   font-size: 15px;
   font-style: italic;
+  color: #bc8034;
+  border-color: #bc8034;
+  opacity: 0.9;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 h2 {
   margin-bottom: 5px;
   font-size: 28px;
+  color: #5e0b15;
 }
 .your-location {
-  background-color: white;
+  background-color: transparent;
   border: none;
+  color: #bc8034;
   position: relative;
   right: -520px;
   top: -65px;
@@ -79,11 +94,13 @@ h2 {
 .date {
   font-size: 18px;
   margin-top: 0px;
-  opacity: 0.7;
+  opacity: 0.9;
+  color: #8c7a6b;
 }
 .time {
   font-size: 36px;
   font-weight: bold;
+  color: #90323d;
 }
 .time small {
   font-size: 18px;
@@ -93,6 +110,9 @@ h2 {
 footer {
   text-align: center;
   margin-top: 50px;
-  color: #666;
+  color: #8c7a6b;
   font-family: "Courier New", Courier, monospace;
+}
+.foot-link {
+  color: #bc8034;
 }
