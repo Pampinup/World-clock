@@ -1,13 +1,98 @@
+.instrument-serif-regular {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.instrument-serif-regular-italic {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+.material-symbols-outlined {
+  vertical-align: middle;
+  font-size: 30px;
+}
+
 body {
-    background-color: #f7e0d4;
+  background-color: #f7e0d4;
+  font-family: "Instrument Serif", serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 h1 {
-    color: #333;
-    text-align: center;
-    margin-top: 20px;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 36px;
+  font-weight: bold;
+}
+select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-style: italic;
+}
+h2 {
+  margin-bottom: 5px;
+  font-size: 28px;
+}
+.your-location {
+  background-color: white;
+  border: none;
+  position: relative;
+  right: -520px;
+  top: -65px;
+  cursor: pointer;
+}
+#pin {
+  font-size: 40px;
+}
+#display-your-location {
+  display: none;
+}
+.display-city {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #ccc;
+}
+.display-city:last-child {
+  border: none;
+}
+.date {
+  font-size: 18px;
+  margin-top: 0px;
+  opacity: 0.7;
+}
+.time {
+  font-size: 36px;
+  font-weight: bold;
+}
+.time small {
+  font-size: 18px;
+  vertical-align: middle;
+  line-height: 1.5;
 }
 footer {
-    text-align: center;
-    margin-top: 20px;
-    color: #666;
+  text-align: center;
+  margin-top: 50px;
+  color: #666;
+  font-family: "Courier New", Courier, monospace;
 }
