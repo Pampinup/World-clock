@@ -19,10 +19,9 @@
 }
 
 body {
-  background-color:  rgba(244, 235, 232, 0.9);
+  background-color: rgba(244, 235, 232, 0.9);
   font-family: "Instrument Serif", serif;
-  
-  
+
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -64,6 +63,7 @@ h2 {
   font-size: 28px;
   color: #5e0b15;
 }
+
 .your-location {
   background-color: transparent;
   border: none;

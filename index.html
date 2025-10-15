@@ -24,7 +24,7 @@
         <h1>
           World Clock <span class="material-symbols-outlined"> schedule </span>
         </h1>
-        <button class="your-location">
+        <button id="get-your-location" class="your-location">
           <span id="pin" class="material-symbols-outlined">
             globe_location_pin
           </span>
@@ -32,40 +32,42 @@
       </div>
       <select name="select-country" id="select-country">
         <option value="">Select a city...</option>
-        <option value="">London</option>
-        <option value="">New York</option>
-        <option value="">Australia</option>
-        <option value="">Spain</option>
-        <option value="">Ireland</option>
+        <option value="Europe/London">London</option>
+        <option value="America/New_York">New York</option>
+        <option value="Australia/Sydney">Sydney</option>
+        <option value="Europe/Madrid">Madrid</option>
+        <option value="Europe/Brussels">Brussels</option>
+        <option value="Europe/Dublin">Dublin</option>
+        <option value="Israel">Jerusalem</option>
+        <option value="Europe/Paris">Paris</option>
       </select>
-
-      <div id="los-angeles" class="display-city">
-        <div>
-          <h2>Los Angeles</h2>
-          <div class="date">September 15th 2025</div>
+      <div id="cities">
+        <div id="los-angeles" class="display-city">
+          <div>
+            <h2>Los Angeles</h2>
+            <div class="date">September 15th 2025</div>
+          </div>
+          <div class="time">10:35:15<small>AM</small></div>
         </div>
-        <div class="time">10:35:15<small>AM</small></div>
-      </div>
-      <div id="beijing" class="display-city">
-        <div>
-          <h2>Beijing</h2>
-          <div class="date">September 15th 2025</div>
+        <div id="beijing" class="display-city">
+          <div>
+            <h2>Beijing</h2>
+            <div class="date">September 15th 2025</div>
+          </div>
+          <div class="time">10:35:15<small>AM</small></div>
         </div>
-        <div class="time">10:35:15<small>AM</small></div>
-      </div>
-      <div id="barcelona" class="display-city">
-        <div>
-          <h2>Barcelona</h2>
-          <div class="date">September 15th 2025</div>
+        <div id="barcelona" class="display-city">
+          <div>
+            <h2>Barcelona</h2>
+            <div class="date">September 15th 2025</div>
+          </div>
+          <div class="time">10:35:15<small>AM</small></div>
         </div>
-        <div class="time">10:35:15<small>AM</small></div>
       </div>
       <div id="display-your-location" class="display-city">
         <div>
           <h2>
-            Your Location<span class="material-symbols-outlined">
-              home_pin
-            </span>
+            <span class="material-symbols-outlined"> home_pin </span>
           </h2>
           <div class="date">September 15th 2025</div>
         </div>
