@@ -24,11 +24,22 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 .container {
   max-width: 600px;
   margin: 60px auto;
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/890/original/51RXJ9Ga-gL._AC_SL1000_.jpg?1760559483");
+  background-size: cover;
+  background-blend-mode: lighten;
+  background-color: rgba(244, 235, 232, 0.9);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#container-background {
+  max-width: 600px;
+  margin: 60px auto;
   background-size: cover;
   background-blend-mode: lighten;
   background-color: rgba(244, 235, 232, 0.9);
@@ -44,6 +55,15 @@ h1 {
   margin-top: 20px;
   font-size: 36px;
   font-weight: bold;
+  text-decoration: none !important;
+  border-bottom: none;
+  letter-spacing: 1px;
+}
+h1:hover {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
 }
 select {
   display: block;
@@ -61,6 +81,7 @@ h2 {
   margin-bottom: 5px;
   font-size: 28px;
   color: #5e0b15;
+  margin-top: 30px;
 }
 
 .your-location {
@@ -68,6 +89,9 @@ h2 {
   border: none;
   color: #bc8034;
   position: relative;
+  position: static;
+  float: right;
+  margin-top: -70px;
   right: -520px;
   top: -65px;
   cursor: pointer;
@@ -95,6 +119,9 @@ h2 {
   margin-top: 0px;
   opacity: 0.9;
   color: #8c7a6b;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  border-radius: 5px;
 }
 .time {
   font-size: 36px;
@@ -108,34 +135,56 @@ h2 {
 }
 footer {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 80px;
   color: #8c7a6b;
   font-family: "Courier New", Courier, monospace;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 .foot-link {
   color: #bc8034;
 }
 .kuala-lumpur {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/889/original/51DZbHffbQL._AC_SL1000_.jpg?1760559306");
-  background-size: cover;
-  background-blend-mode: lighten;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: rgba(244, 235, 232, 0.9);
 }
 .sydney {
-    background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/888/original/51YkfPIs1sL._UF894_1000_QL80_.jpg?1760558895");
-    background-size: cover;
-    background-blend-mode: lighten;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: rgba(244, 235, 232, 0.9);
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/888/original/51YkfPIs1sL._UF894_1000_QL80_.jpg?1760558895");
 }
 .singapore {
-    background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/892/original/51iiqkG6WmL._AC_SL1000_.jpg?1760559984");
-    background-size: cover;
-    background-blend-mode: lighten;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: rgba(244, 235, 232, 0.9);
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/892/original/51iiqkG6WmL._AC_SL1000_.jpg?1760559984");
+}
+.tokyo {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/909/original/tokio-cruce-famoso-de-shibuya-el-ejemplo-del-vector-todos-los-anuncios-es-falso-caracteres-ficticio-148617453_%282%29.jpg?1760604598");
+}
+.seoul {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/907/original/dreamstime_s_78031056.jpg?1760604096");
+}
+.honolulu {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/904/original/510EQxrtNlL._AC_SL1000_.jpg?1760604060");
+}
+.caracas {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/900/original/51-lODL783L._AC_SL1000_.jpg?1760603956");
+}
+.seoul {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/912/original/seoul.jpg?1760605934");
+}
+.chicago {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/906/original/A1u5ywIZN7L._AC_SX466_.jpg?1760604082");
+}
+.paris {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/910/original/paris.jpg?1760605860");
+}
+.toronto {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/903/original/61tAphDn3rL._AC_SL1000_.jpg?1760604053");
+}
+.dublin {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/911/original/dublin.jpg?1760605920");
+}
+.brussels {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/901/original/51qXkiSD8BL._AC_SL1000_.jpg?1760604021");
+}
+.new-york {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/899/original/2kX6tZR95k3l6SjVeR0MyDGCG0C-desktop.jpg?1760603933");
+}
+.london {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/898/original/2iQPUTIWKwZzkcFPjWiiQLncBIS-desktop.jpg?1760603921");
 }

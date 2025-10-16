@@ -45,7 +45,7 @@ function updateCountry(event) {
             <div class="date">${countryTime.format("MMMM Do YYYY")}</div>
           </div>
           <div class="time">${countryTime.format(
-            "hh:mm:ss [<small>]A[</small>]"
+            "hh:mm [<small>]A[</small>]"
           )}</div>
         </div>`;
 }
@@ -61,7 +61,7 @@ function getYourLocation() {
             <div class="date">${here.format("MMMM Do YYYY")}</div>
           </div>
           <div class="time">${here.format(
-            "hh:mm:ss [<small>]A[</small>]"
+            "hh:mm [<small>]A[</small>]"
           )}</div>
         </div>`;
 }
@@ -69,14 +69,27 @@ function updateBackground(event) {
   let countryTimezone = event.target.value;
   let containerElement = document.querySelector("#container-background");
   let nameCountry = countryTimezone
+    .replace("_", "-")
     .split("/")[1]
-    .replace("_", " ")
     .toLowerCase();
-  let nameCountryClass = nameCountry.replace(" ", "-");
-  containerElement.classList.add(nameCountryClass);
+
+  if (containerElement.classList.contains(nameCountry)) {
+    remove(nameCountry);
+  } else {
+    add(nameCountry);
+  }
+}
+function remove(nameCountry) {
+  let containerElement = document.querySelector("#container-background");
+  containerElement.classList.remove(nameCountry);
+}
+function add(nameCountry) {
+  let containerElement = document.querySelector("#container-background");
+  containerElement.classList = nameCountry;
 }
 updateTime();
 setInterval(updateTime, 1000);
+
 // Dropdown menu
 let selectCountryElement = document.querySelector("#select-country");
 selectCountryElement.addEventListener("change", updateCountry);
