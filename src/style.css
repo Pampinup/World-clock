@@ -83,17 +83,13 @@ h2 {
   color: #5e0b15;
   margin-top: 30px;
 }
-
 .your-location {
   background-color: transparent;
   border: none;
   color: #bc8034;
-  position: relative;
   position: static;
   float: right;
   margin-top: -70px;
-  right: -520px;
-  top: -65px;
   cursor: pointer;
 }
 #pin {
