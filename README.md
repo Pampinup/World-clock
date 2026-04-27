@@ -23,4 +23,3 @@ A responsive web application that displays real-time clocks across multiple time
 - Managing dynamic data rendering
 - Building responsive UI layouts
 - Deploying projects using Netlify
-```0
