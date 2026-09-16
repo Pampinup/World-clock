@@ -21,158 +21,42 @@
   vertical-align: middle;
   font-size: 30px;
 }
-/* Base */
-* {
-  box-sizing: border-box;
-}
 
 body {
-  min-height: 100vh;
-  margin: 0;
-  padding: 32px 20px;
-
+  /*background-color: rgba(244, 235, 232, 0.9);*/
   font-family: "Instrument Serif", serif;
-
-  background-color: rgba(0, 0, 0, 0.1);
-  background-image: url("../media/bases/background.jpg");
+  /*background-repeat: no-repeat;*/
   background-position: center;
+  background-image: url("../media/bases/background.jpg");
   background-size: cover;
-  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.1);
   background-blend-mode: overlay;
 }
-
-/* Main card */
 .container {
-  width: min(100%, 680px);
-  margin: 30px auto;
-  padding: 32px;
-
-  background-color: rgba(255, 255, 255, 0.9);
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.82)),
-    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/890/original/51RXJ9Ga-gL._AC_SL1000_.jpg?1760559483");
-  background-position: center;
+  max-width: 600px;
+  margin: 60px auto;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/890/original/51RXJ9Ga-gL._AC_SL1000_.jpg?1760559483");
   background-size: cover;
-
-  border: 1px solid rgba(255, 255, 255, 0.65);
-  border-radius: 18px;
-  box-shadow: 0 12px 35px rgba(70, 45, 25, 0.18);
+  background-blend-mode: lighten;
+  background-color: rgba(244, 235, 232, 0.9);
+  /*background-repeat: no-repeat;*/
+  background-position: center;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-/* The id is not needed for visual styles */
-
-
-/* City selector */
-select {
-  display: block;
-  width: 100%;
-  padding: 12px 14px;
-
-  color: #9b6728;
-  font:
-    italic 16px "Instrument Serif",
-    serif;
-
-  background: rgba(255, 255, 255, 0.72);
-  border: 1px solid #bc8034;
-  border-radius: 8px;
-  outline: none;
-
-  transition:
-    border-color 0.2s ease,
-    box-shadow 0.2s ease;
+#container-background {
+  max-width: 600px;
+  margin: 60px auto;
+  background-size: cover;
+  background-blend-mode: lighten;
+  background-color: rgba(244, 235, 232, 0.9);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-select:focus {
-  border-color: #90323d;
-  box-shadow: 0 0 0 3px rgba(188, 128, 52, 0.18);
-}
-
-/* Date: more integrated with the illustration */
-.date {
-  margin-top: 0;
-  padding: 0;
-
-  color: #8c7a6b;
-  font-size: 18px;
-
-  background: transparent;
-}
-
-/* Location button */
-.your-location {
-  float: right;
-  margin-top: -70px;
-  padding: 6px;
-
-  color: #bc8034;
-  background: transparent;
-  border: 0;
-  border-radius: 50%;
-  cursor: pointer;
-
-  transition:
-    color 0.2s ease,
-    transform 0.2s ease;
-}
-
-.your-location:hover {
-  color: #90323d;
-  transform: scale(1.08);
-}
-
-.your-location:focus-visible {
-  outline: 2px solid #bc8034;
-  outline-offset: 3px;
-}
-
-/* Footer */
-footer {
-  margin-top: 48px;
-  padding-top: 20px;
-
-  color: #8c7a6b;
-  font-family: "Courier New", Courier, monospace;
-  text-align: center;
-
-  background: transparent;
-  border-top: 1px solid rgba(140, 122, 107, 0.25);
-}
-
-/* Mobile */
-@media (max-width: 576px) {
-  body {
-    padding: 16px 12px;
-  }
-
-  .container {
-    margin: 16px auto;
-    padding: 24px 18px;
-    border-radius: 14px;
-  }
-
-  h1 {
-    font-size: 32px;
-  }
-
-  h2 {
-    font-size: 24px;
-  }
-
-  .time {
-    font-size: 28px;
-  }
-
-  .display-city {
-    padding: 14px 0;
-  }
-
-  footer {
-    margin-top: 36px;
-    font-size: 13px;
-  }
-}
-
 h1 {
   color: #5e0b15;
   text-align: center;
@@ -188,7 +72,18 @@ h1:hover {
 a {
   text-decoration: none;
 }
-
+select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-style: italic;
+  color: #bc8034;
+  border-color: #bc8034;
+  opacity: 0.9;
+  background-color: rgba(255, 255, 255, 0.8);
+}
 h2 {
   margin-bottom: 5px;
   font-size: 28px;
@@ -196,7 +91,15 @@ h2 {
   margin-top: 30px;
   text-size-adjust: auto;
 }
-
+.your-location {
+  background-color: transparent;
+  border: none;
+  color: #bc8034;
+  position: static;
+  float: right;
+  margin-top: -70px;
+  cursor: pointer;
+}
 #pin {
   font-size: 40px;
 }
@@ -215,7 +118,15 @@ h2 {
 .display-city:last-child {
   border: none;
 }
-
+.date {
+  font-size: 18px;
+  margin-top: 0px;
+  opacity: 0.9;
+  color: #8c7a6b;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  border-radius: 5px;
+}
 .time {
   font-size: 36px;
   font-weight: bold;
@@ -227,7 +138,13 @@ h2 {
   vertical-align: middle;
   line-height: 1.5;
 }
-
+footer {
+  text-align: center;
+  margin-top: 80px;
+  color: #8c7a6b;
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgba(255, 255, 255, 0.8);
+}
 .foot-link {
   color: #bc8034;
 }
