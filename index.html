@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -33,25 +33,86 @@
           </span>
         </button>
       </div>
-      <select name="select-country" id="select-country">
-        <option value="">Select a city...</option>
-        <option value="Europe/London" class="london">London</option>
-        <option value="Europe/Brussels" class="brussels">Brussels</option>
-        <option value="Europe/Dublin" class="dublin">Dublin</option>
-        <option value="Europe/Paris" class="paris">Paris</option>
-        <option value="America/Toronto" class="toronto">Toronto</option>
-        <option value="America/New_York" class="new-york">New York</option>
-        <option value="America/Chicago" class="chicago">Texas</option>
-        <option value="Pacific/Honolulu" class="honolulu">Honolulu</option>
-        <option value="America/Caracas" class="caracas">Caracas</option>
-        <option value="Australia/Sydney" class="sydney">Sydney</option>
-        <option value="Asia/Seoul" class="seoul">Seoul</option>
-        <option value="Asia/Tokyo" class="tokyo">Tokyo</option>
-        <option value="Asia/Singapore" class="singapore">Singapore</option>
-        <option value="Asia/Kuala_Lumpur" class="kuala-lumpur">
-          Kuala Lumpur
-        </option>
-      </select>
+      <div class="city-selector" id="city-selector">
+        <button
+          type="button"
+          class="city-selector-button"
+          id="city-selector-button"
+          aria-haspopup="listbox"
+          aria-expanded="false"
+        >
+          <span id="selected-city">Select a city...</span>
+
+          <span
+            class="material-symbols-outlined city-selector-arrow"
+            id="city-selector-arrow"
+          >
+            expand_more
+          </span>
+        </button>
+
+        <ul class="city-selector-menu" id="city-selector-menu" role="listbox">
+          <li class="city-option placeholder" data-value="" role="option">
+            Select a city...
+          </li>
+
+          <li class="city-option" data-value="Europe/London" role="option">
+            London
+          </li>
+
+          <li class="city-option" data-value="Europe/Brussels" role="option">
+            Brussels
+          </li>
+
+          <li class="city-option" data-value="Europe/Dublin" role="option">
+            Dublin
+          </li>
+
+          <li class="city-option" data-value="Europe/Paris" role="option">
+            Paris
+          </li>
+
+          <li class="city-option" data-value="America/Toronto" role="option">
+            Toronto
+          </li>
+
+          <li class="city-option" data-value="America/New_York" role="option">
+            New York
+          </li>
+
+          <li class="city-option" data-value="America/Chicago" role="option">
+            Texas
+          </li>
+
+          <li class="city-option" data-value="Pacific/Honolulu" role="option">
+            Honolulu
+          </li>
+
+          <li class="city-option" data-value="America/Caracas" role="option">
+            Caracas
+          </li>
+
+          <li class="city-option" data-value="Australia/Sydney" role="option">
+            Sydney
+          </li>
+
+          <li class="city-option" data-value="Asia/Seoul" role="option">
+            Seoul
+          </li>
+
+          <li class="city-option" data-value="Asia/Tokyo" role="option">
+            Tokyo
+          </li>
+
+          <li class="city-option" data-value="Asia/Singapore" role="option">
+            Singapore
+          </li>
+
+          <li class="city-option" data-value="Asia/Kuala_Lumpur" role="option">
+            Kuala Lumpur
+          </li>
+        </ul>
+      </div>
       <div id="cities">
         <div id="los-angeles" class="display-city">
           <div>
